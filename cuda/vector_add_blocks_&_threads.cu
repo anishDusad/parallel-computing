@@ -1,7 +1,7 @@
 
  __global__ void add(int *a, int *b, int *c) {
- int index = threadIdx.x + blockIdx.x * blockDim.x;
- c[index] = a[index] + b[index];
+  int index = threadIdx.x + blockIdx.x * blockDim.x;
+  c[index] = a[index] + b[index];
  }
 
 #define N (2048*2048)
