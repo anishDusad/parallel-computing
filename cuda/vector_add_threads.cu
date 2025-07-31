@@ -9,6 +9,7 @@
    int size = N * sizeof(int);
    // host copies of a, b, c
    // device copies of a, b, c
+
    // Alloc space for device copies of a, b, c
    cudaMalloc((void **)&d_a, size);
    cudaMalloc((void **)&d_b, size);
