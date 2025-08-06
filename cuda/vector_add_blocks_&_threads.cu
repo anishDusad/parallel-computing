@@ -9,9 +9,9 @@
  int main(void) {
    // host copies of a, b, c
    int *a, *b, *c;
+   // device copies of a, b, c
    int *d_a, *d_b, *d_c;
    int size = N * sizeof(int);
-   // device copies of a, b, c
    // Alloc space for device copies of a, b, c
    cudaMalloc((void **)&d_a, size);
    cudaMalloc((void **)&d_b, size);
