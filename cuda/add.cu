@@ -13,6 +13,7 @@ int main(void) {
    cudaMalloc((void **)&d_a, size);
    cudaMalloc((void **)&d_b, size);
    cudaMalloc((void **)&d_c, size);
+
    // Setup input values
    a = 2;
    b = 7;
