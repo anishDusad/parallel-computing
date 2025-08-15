@@ -7,8 +7,7 @@ int main(void) {
    int a, b, c;
    // device copies of a, b, c
    int *d_a, *d_b, *d_c;
-   int size = sizeof(int);
-   
+   int size = sizeof(int); 
    // Allocate space for device copies of a, b, c
    cudaMalloc((void **)&d_a, size);
    cudaMalloc((void **)&d_b, size);
