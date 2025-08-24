@@ -6,6 +6,7 @@
  int main(void) {
    // host copies of a, b, c
    int *a, *b, *c;
+   // device copies of a, b, c
    int *d_a, *d_b, *d_c; // device copies of a, b, c
    int size = N * sizeof(int);
 
